@@ -1,12 +1,13 @@
 {
   "name": "react-swipe-card",
-  "version": "0.1.4",
+  "version": "0.1.9",
   "description": "Tinder style swipe cards",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexandre-garrec/react-swipe-card.git"
+    "url": "git+https://github.com/Feedmee-app/react-swipe-card.git"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
     "start": "start-storybook -p 9001 -c .storybook",
     "deploy-storybook": "storybook-to-ghpages",

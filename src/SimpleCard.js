@@ -13,12 +13,12 @@ class Card extends Component {
     const initialPosition = {
       x: Math.round((this.props.containerSize.x - card.offsetWidth) / 2),
       y: Math.round((this.props.containerSize.y - card.offsetHeight) / 2)
-    }
+    };
     this.setState({ initialPosition })
   }
 
   componentDidMount () {
-    this.setInitialPosition()
+    this.setInitialPosition();
     window.addEventListener('resize', this.setInitialPosition)
   }
 
@@ -27,16 +27,16 @@ class Card extends Component {
   }
 
   render () {
-    const { initialPosition: { x, y } } = this.state
-    const { className = 'inactive' } = this.props
+    const { initialPosition: { x, y } } = this.state;
+    const { className = 'swipe-card-inactive' } = this.props;
     var style = {
       ...translate3d(x, y),
       zIndex: this.props.index,
       ...this.props.style
-    }
+    };
 
     return (
-      <div style={style} className={`card ${className}`}>
+      <div style={style} className={`swipe-card ${className}`}>
         {this.props.children}
       </div>
     )

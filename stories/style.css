@@ -36,7 +36,7 @@ h1, h2 {
   border: 1px solid #e5e5e5;
 }
 
-.card {
+.swipe-card {
   background-color: white;
   background-size: cover;
   position: absolute;
@@ -49,16 +49,16 @@ h1, h2 {
   cursor: pointer;
 }
 
-.animate {
+.swipe-card-animate {
   transition: transform .3s;
   box-shadow: none;
 }
 
-.inactive {
+.swipe-card-inactive {
   box-shadow: none;
 }
 
-.alert {
+.swipe-card-alert {
   width: 45%;
   min-height: 10%;
   position: absolute;
@@ -70,11 +70,11 @@ h1, h2 {
   line-height: 3rem;
 }
 
-.alert-visible {
+.swipe-card-alert-visible {
   opacity: 1;
 }
 
-.alert-right {
+.swipe-card-alert-right {
   top: 0;
   right: 0;
   background: green;
@@ -82,7 +82,7 @@ h1, h2 {
   border-bottom-left-radius: 50px;
 }
 
-.alert-left {
+.swipe-card-alert-left {
   top: 0;
   left: 0;
   background: red;
@@ -90,14 +90,14 @@ h1, h2 {
   border-bottom-right-radius: 50px;
 }
 
-.alert-top {
+.swipe-card-alert-top {
   background: purple;
   border-radius: 50px;
   transform: translate(-50%, 0);
   margin-left: 50%;
  }
 
- .alert-bottom {
+ .swipe-card-alert-bottom {
   bottom: 0;
   background: blue;
   border-top-left-radius: 50px;
